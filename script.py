@@ -1,8 +1,13 @@
+# -*- coding: utf-8 -*-
+# bot Nadya
+# version 2.0
+
 from tkinter import *
 import random
 import module
 #для вывода голоса
 import pyttsx3
+import os
 
 def click():
     """
@@ -47,13 +52,13 @@ def bot(que):
 
 #окно приложения
 window = Tk()
-window.title("проект Миллиган")
+window.title("голосовой помощник Надя")
 window.geometry('400x400')
 
-h1 = Label(window, text = "Миллиган", font = ("Arial Bold", 40))
+h1 = Label(window, text = "Надя Бот", font = ("Arial Bold", 40))
 h1.grid(column = 0, row = 0)
 
-h2 = Label(window, text = "Пообщайся с Миллиганом и его 40 личностями", font = ("Arial Bold", 13))
+h2 = Label(window, text = "Стало скучно? пообщайся с ботом Надей", font = ("Arial Bold", 13))
 h2.grid(column = 0, row = 1)
 
 p = Label(window, text = "Задайте вопрос?", font = ("Arial Bold", 10))
